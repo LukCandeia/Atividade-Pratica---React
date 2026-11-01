@@ -50,11 +50,11 @@ button {
   cursor: pointer;
   padding: 10px 14px;
   border-radius: 8px;
-  border: 1px solid #7b8797;
-  background: white;
+  border: 1px solid rgb(6, 161, 66);
+  background: rgb(7, 184, 75);
 }
 button:hover {
-  background: #edf2f7;
+  background: #3cff00;
 }
 .product-details {
   margin-top: 24px;

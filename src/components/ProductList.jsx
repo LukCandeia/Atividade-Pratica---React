@@ -1,6 +1,6 @@
-import CardProduto from './CardProduto.jsx';
+import ProductCard from './ProductCard.jsx';
 
-export default function ListaProduto({ products }) {
+export default function ProductList({ products, onViewDetails }) {
   if (products.length === 0) {
     return <p>Nenhum produto encontrado.</p>;
   }
@@ -8,7 +8,7 @@ export default function ListaProduto({ products }) {
   return (
     <section className="product-grid" aria-label="Lista de produtos">
       {products.map((product) => (
-        <CardProduto key={product.id} product={product} />
+        <ProductCard key={product.id} product={product} onViewDetails={onViewDetails} />
       ))}
     </section>
   );

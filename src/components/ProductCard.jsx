@@ -1,4 +1,4 @@
-export default function CardProduto({ product }) {
+export default function ProductCard({ product, onViewDetails }) {
   return (
     <article className="product-card">
       <h2>{product.nome}</h2>
@@ -9,6 +9,9 @@ export default function CardProduto({ product }) {
           currency: 'BRL'
         })}
       </strong>
+      <button type="button" onClick={() => onViewDetails(product.id)}>
+        Ver detalhes
+      </button>
     </article>
   );
 }
